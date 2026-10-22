@@ -1,0 +1,159 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* --- PHẦN HEADER --- */
+/* Yêu cầu: Nền ảnh banner, chia 2 cột logo và slogan */
+.ht{
+	background-image: url(banner.PNG);
+	display: grid;
+	grid-template-columns: auto auto;
+	align-content: center;
+}
+.logo{
+	display: grid;
+	grid-template-columns: auto;
+	align-content: center;
+}
+.slogan{
+	padding: 5px 0px;
+}
+/* Yêu cầu: Dòng chữ xanh #0033CC, địa chỉ màu đen */
+.dong1{
+	text-align: center;
+	color: #032897;
+	text-shadow: 2px 1px #FFFFFF;
+}
+.dong2{
+	text-align: center;
+	color: black;
+	text-shadow: 2px 1px #FFFFFF;
+}
+
+/* Yêu cầu: Menu ngang nền xanh #33CCFF */
+.hb{
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: #33CCFF;
+	height: 50px;
+	align-content: center;	
+}
+.hb>ul{
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: space-around;
+}
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 50px;		
+}
+/* Yêu cầu: Rê chuột chữ đổi màu vàng, nền chuyển sang xanh lá cây */
+.hb a:hover{
+	color: yellow;
+	background-color: green;
+}
+.bhr{
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: end;
+	align-content: center;
+	margin-right: 20px;
+}
+.find{
+	border-radius: 5px;
+	height: 30px;
+	background-color: white;
+}
+
+/* --- BỐ CỤC CHUNG: 2 CỘT (MENU TRÁI, CONTENT PHẢI) --- */
+section{
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 5px;
+}
+
+/* --- PHẦN MENU BÊN TRÁI --- */
+/* Yêu cầu: Tiêu đề nền xanh #0066FF, chữ trắng */
+.tieude{
+	background-color: #0066FF;
+	color: #FFFFFF;
+}
+/* Yêu cầu: Menu cấp 1 nền xanh #33FFFF, viền 1px */
+nav ul{
+	background-color: #33FFFF;
+}
+nav ul li{
+	border-bottom: 1px solid white;
+}
+nav a{
+	display: inline-block;
+}
+/* Yêu cầu: Rê chuột vào menu cấp 1 chữ đổi màu vàng */
+nav a:hover{
+	color: yellow;
+}
+/* Yêu cầu: Hover 'Các ngành khác' hiển thị menu cấp 2 */
+.cap1 { position: relative; }
+
+.cap2 {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 250px;
+    background: #33FFFF;
+    list-style: none;
+    display: none;
+}
+
+.cap1:hover .cap2 { display: block; }
+
+/* --- PHẦN CONTENT BÊN PHẢI --- */
+/* Yêu cầu: Nền màu trắng */
+.content{
+	background-color: white;
+}
+/* Yêu cầu: Tiêu đề nền xanh #33CCFF, chữ trắng */
+.ct{
+	border-bottom: 2px solid #33CCFF;
+}
+.nut{
+	color: white;
+	background-color: #33CCFF;
+	width: 300px;
+}
+/* Yêu cầu: Lưới 4 cột hiển thị sản phẩm */
+.cb{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: space-evenly;
+	margin-top: 5px;
+	gap: 10px;
+}
+.sanpham{
+	border: 1px solid lightgray;
+}
+.anh{
+	text-align: center;
+	padding: 2px 0px;
+}
+.proimg{
+	width: 98%;
+}
+/* Yêu cầu: Rê chuột vào ảnh thì phóng to */
+.proimg:hover{
+	scale: 1.2;	
+}
+/* Yêu cầu: Tên sản phẩm chữ đen, rê chuột vào đổi sang màu đỏ */
+.chu{
+	text-align: center;
+	padding: 10px 0px;
+	color: black;
+}
+.chu:hover{
+	color: red;
+}
